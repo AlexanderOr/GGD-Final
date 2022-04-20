@@ -3,19 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Door
+  - Exit
+  - Target
+  - Border
+  - EnemyBullet
+  - Bullet
+  - Enemy2
+  - Enemy1
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IsGround
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - NotGround
+  - EnemyBullet
+  - Enemy
+  - Player
+  - Bullet
   - 
   - 
   - 
