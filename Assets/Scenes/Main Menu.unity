@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 471.97528}
-  m_SizeDelta: {x: 510.5735, y: 136.047}
+  m_AnchoredPosition: {x: 45.806, y: 471.98}
+  m_SizeDelta: {x: 1828.3872, y: 136.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8071017
 MonoBehaviour:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name of game
+  m_Text: Warehouse runner/shooter
 --- !u!222 &8071018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 1032179669}
   - component: {fileID: 1032179668}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: Level1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1032179669
@@ -1365,7 +1365,7 @@ GameObject:
   - component: {fileID: 1532129043}
   - component: {fileID: 1532129042}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1667,7 +1667,7 @@ GameObject:
   - component: {fileID: 2140846289}
   - component: {fileID: 2140846288}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: CreditsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

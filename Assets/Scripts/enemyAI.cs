@@ -13,6 +13,7 @@ public class enemyAI : MonoBehaviour
     public Transform Player;
     public LayerMask whatIsGround, whatIsPlayer;
     HP hp;
+    public GameObject explosion;
     //patrolling
     public Vector3 walkpoint;
     bool walkpointset;
@@ -102,6 +103,7 @@ public class enemyAI : MonoBehaviour
         transform.LookAt(Player);
         Exploision.Play();
         hp.Damage2();
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
         
     }

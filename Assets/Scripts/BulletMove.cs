@@ -30,25 +30,25 @@ public class BulletMove : MonoBehaviour
             //destroy target and add point
             sn.score();
             Destroy(col.gameObject);
-            Destroy(gameObject);
             
         }
 
-        if (col.gameObject.tag == "Border")
+        /*if (col.gameObject.tag == "Border")
         {
-            Destroy(gameObject);
-        }
+            Debug.Log("Yes");
+            Destroy(this.gameObject);
+        }*/
 
         if (col.gameObject.tag == "Enemy1" && col.gameObject.TryGetComponent<Enemy>(out enemy1))
         {            
             enemy1.damage();
-            Destroy(gameObject);
         }
 
         if (col.gameObject.tag == "Enemy2" && col.gameObject.TryGetComponent<Enemy2>(out enemy2))
         {
             enemy2.damage();
-            Destroy(gameObject);
         }
+
+        Destroy(this.gameObject);
     }
 }

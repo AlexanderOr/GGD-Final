@@ -21,13 +21,15 @@ public class HP : MonoBehaviour
         HPText.GetComponent<Text>().text = "HEALTH: " + hp + " / 5";
     }
 
-   
-    private void OnTriggerEnter(Collider col)
+
+    private void OnCollisionEnter(Collision col)
     {
         Debug.Log(col.gameObject.name);
         if (col.gameObject.tag == "EnemyBullet")
         {
+            Debug.Log("YES");
             StartCoroutine(Damage());
+            Destroy(col.gameObject);
         }
         if (col.gameObject.tag == "Enemy2")
         {
@@ -40,7 +42,7 @@ public class HP : MonoBehaviour
     {
         hp--;
         Hurt.Play();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitWhile(() => Hurt.isPlaying);
     }
 
     public void Damage2()

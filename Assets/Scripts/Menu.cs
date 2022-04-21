@@ -13,6 +13,8 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(name);
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     public void optionsmenu()
     {

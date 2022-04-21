@@ -44,11 +44,20 @@ public class GunShoot : MonoBehaviour
 
 
     
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && TotalAmmo > 0)
         {
-            Reload.Play();
-            TotalAmmo -= (10 - CurrentAmmo);
-            CurrentAmmo += (10 - CurrentAmmo);
+            if(TotalAmmo > 10 - CurrentAmmo)
+            {
+                Reload.Play();
+                TotalAmmo -= (10 - CurrentAmmo);
+                CurrentAmmo += (10 - CurrentAmmo);
+            }
+            else
+            {
+                CurrentAmmo += TotalAmmo;
+                TotalAmmo -= TotalAmmo;
+            }
+            
             
         }
 
