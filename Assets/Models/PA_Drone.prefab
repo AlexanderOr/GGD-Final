@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5942216327495476831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.028, y: 0.154, z: 0.343}
+  m_LocalPosition: {x: 0.028, y: 0.154, z: 0.738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6712885243192568651}
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 3
-  enemyBullet: {fileID: 5252221603468204374, guid: 0d77e94c7201acd4e9e5c955e8524020, type: 3}
+  enemyBullet: {fileID: 5252221603468204374, guid: 547dae20ec53e694f95efdd98054c363, type: 3}
   eyes: {fileID: 0}
   explosion: {fileID: 3160184955731222033, guid: 95198cc735fa49f46bf38c5f9eaa8caf, type: 3}
   Speed: 20

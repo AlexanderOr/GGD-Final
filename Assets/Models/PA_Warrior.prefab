@@ -653,6 +653,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
+  explosion: {fileID: 3160184955731222033, guid: b7ff3857416abec4b9cb0ba1ddda3a4b, type: 3}
   walkpoint: {x: 0, y: 0, z: 0}
   walkpointrange: 10
   timebetweenattacks: 2

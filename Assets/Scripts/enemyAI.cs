@@ -50,7 +50,7 @@ public class enemyAI : MonoBehaviour
 
         if (!insight && !inattack) Patroling();
         if (insight && !inattack) chase();
-        if (insight && inattack) attack();
+        if (insight && inattack) Attack();
     }
 
     private void Patroling()
@@ -96,12 +96,15 @@ public class enemyAI : MonoBehaviour
         agent.SetDestination(Player.position);
     }
 
-    private void attack()
+    private void Attack()
     {
         //make enemy stop moving
         agent.SetDestination(transform.position);
         transform.LookAt(Player);
+        Exploision.Stop();
         Exploision.Play();
+        if (!hp)
+            hp = HP.instance;
         hp.Damage2();
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);

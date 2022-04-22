@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
 
     public GameObject options;
     public GameObject main;
+    public GameObject Controls;
 
     public void LoadLevel(string name)
     {
@@ -20,11 +21,21 @@ public class Menu : MonoBehaviour
     {
         options.SetActive(true);
         main.SetActive(false);
+        Controls.SetActive(false);
     }
+
+    public void Controlsmenu()
+    {
+        Controls.SetActive(true);
+        main.SetActive(false);
+        options.SetActive(false);
+    }
+
     public void mainmenu()
     {
         options.SetActive(false);
         main.SetActive(true);
+        Controls.SetActive(false);
     }
 
     public void Quit()

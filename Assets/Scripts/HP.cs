@@ -8,47 +8,52 @@ public class HP : MonoBehaviour
     public GameObject HPText;
     public int hp = 5;
     public AudioSource Hurt;
+    public bool CanHurt = true;
 
     public static HP instance;
-
-    void Start()
+    
+    public void Start()
     {
+        CanHurt = true;
         instance = this;
     }
 
     void Update()
     {
         HPText.GetComponent<Text>().text = "HEALTH: " + hp + " / 5";
-    }
 
-
-    private void OnCollisionEnter(Collision col)
-    {
-        Debug.Log(col.gameObject.name);
-        if (col.gameObject.tag == "EnemyBullet")
+        if(hp <= 0)
         {
-            Debug.Log("YES");
-            StartCoroutine(Damage());
-            Destroy(col.gameObject);
-        }
-        if (col.gameObject.tag == "Enemy2")
-        {
-            Damage2();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("DeathScene");
         }
     }
 
-
-    IEnumerator Damage()
+    IEnumerator Cooldown()
     {
-        hp--;
-        Hurt.Play();
-        yield return new WaitWhile(() => Hurt.isPlaying);
+        yield return new WaitForSeconds(1f);
+        CanHurt = true;
+    }
+    
+
+    public void Damage1()
+    {
+        if (CanHurt)
+        {
+            hp--;
+            CanHurt = false;
+            Hurt.Play();
+            StartCoroutine(Cooldown());
+        }
     }
 
     public void Damage2()
     {
-        hp = hp - 2;
-        Hurt.Play();
-
+        if(CanHurt == true)
+        {
+            hp -= 2;
+            CanHurt = false;
+            Hurt.Play();
+            StartCoroutine(Cooldown());
+        }
     }
 }
