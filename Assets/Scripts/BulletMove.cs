@@ -9,6 +9,7 @@ public class BulletMove : MonoBehaviour
     Enemy2 enemy2;
     GameManager sn;
     HP hp;
+    public AudioSource Point;
 
     public void Awake()
     {
@@ -38,6 +39,7 @@ public class BulletMove : MonoBehaviour
         {
             Debug.Log("Hit target");
             //destroy target and add point
+            Point.Play();
             sn.score();
             Destroy(col.gameObject);
         }

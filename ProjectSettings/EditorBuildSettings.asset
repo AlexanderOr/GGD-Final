@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: da655240aec2f4947b5f3ade71639101
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: 96717d0b7e57ca04f95dc676f87eeb29
   - enabled: 0
-    path: Assets/Scenes/Level2.unity
-    guid: c36d3cd8fa91a0149a5ea65a7718311b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

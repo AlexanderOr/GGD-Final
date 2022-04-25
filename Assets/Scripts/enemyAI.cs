@@ -98,11 +98,11 @@ public class enemyAI : MonoBehaviour
 
     private void Attack()
     {
+        Debug.Log("working");
         //make enemy stop moving
         agent.SetDestination(transform.position);
         transform.LookAt(Player);
-        Exploision.Stop();
-        Exploision.Play();
+        //spawn object when sound wants to be played;
         if (!hp)
             hp = HP.instance;
         hp.Damage2();

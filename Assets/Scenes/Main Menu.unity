@@ -2233,18 +2233,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use WASD to move and Space to Jump.
-
-
-    Left Click to shoot.
-
-
-    Shoot
-    all of the Targets in the level to unlock the door.
-
-
-    To Finish the level,
-    follow the stairs behind the black door.'
+  m_Text: "Use WASD to move and Space to Jump.\n\nLeft Click to shoot.\n\nShoot all
+    of the Targets in the level to unlock the door. \n\nYou have a limited amount
+    of bullets to escape so use them wisely\n\nTo Finish the level, follow the stairs
+    behind the black door."
 --- !u!222 &1657626441
 CanvasRenderer:
   m_ObjectHideFlags: 0
