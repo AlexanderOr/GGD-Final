@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Warehouse runner/shooter
+  m_Text: Warehouse Shooter
 --- !u!222 &8071018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1173,14 +1173,21 @@ MonoBehaviour:
 
     ________________________________________________________
 
+    https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280
 
     &
 
+    https://assetstore.unity.com/packages/3d/characters/robots/scifi-enemies-and-vehicles-15159
 
 
     SFX
 
-    ________________________________________________________'
+    ________________________________________________________
+
+    Main
+    Music
+
+    https://assetstore.unity.com/packages/audio/action-music-taster-pack-100957'
 --- !u!222 &595957841
 CanvasRenderer:
   m_ObjectHideFlags: 0

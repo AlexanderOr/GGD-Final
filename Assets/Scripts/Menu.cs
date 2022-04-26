@@ -17,6 +17,13 @@ public class Menu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+    public void LoadMain(string name)
+    {
+        SceneManager.LoadScene(name);
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     public void optionsmenu()
     {
         options.SetActive(true);

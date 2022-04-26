@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Intermission.unity
     guid: 7490665f26b91e147aad5104223b2b57
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: d4ea9a78f4e6a52428fa533fc3ec2167
+  - enabled: 1
     path: Assets/Scenes/End Screen.unity
     guid: da655240aec2f4947b5f3ade71639101
   - enabled: 1
